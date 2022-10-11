@@ -113,7 +113,7 @@ justify-content: space-between;
   height: ;
 } */
 .logo-image img {
-  width: 11%;
+  width: 40px;
 }
 .logo-sub-text {
   font-weight: 700;
@@ -141,7 +141,6 @@ justify-content: space-between;
   content: '3';
   width: 15px;
   font-size: 10px;
-  height: 15px;
   background-color: #c96;
   color: var(--other-color);
   text-align: center;
@@ -343,10 +342,7 @@ margin-top: 10px;
   letter-spacing: 0.7px;
   text-transform: uppercase;
 }
-/* .shop-women {
-  height: 98%;
-  width: 98%;
-} */
+
 .shop-women img {
   height: 19.5em;
   width: 35em;
@@ -369,7 +365,6 @@ margin-top: 10px;
 .summer img {
   height: 13em;
   width: 22.7em;
-  /* margin-right: 11px; */
 }
 .summer-women-image {
   height: 13em;
@@ -513,8 +508,8 @@ margin-top: 15px;
       color: var(--red-color);
       margin-right: 5px;
     }
-    /*  Third section*/
 
+    /*  Third section*/
 
     .deal {
       height: 500px;
