@@ -1,0 +1,907 @@
+:root {
+    --main-color: rgb(208, 208, 208);
+    --text-color: rgb(177, 177, 177);
+    --icon-color: grey;
+    --other-color: rgb(255, 255, 255);
+    --black-color: rgb(0, 0, 0);
+    --red-color: rgb(255, 0, 0);
+    --light-brown-color: #cc9966;
+    --light-grey-color: #505050;
+    --orange-color:orange;
+    --btn-color: #c5c9c8;
+  }
+  
+body {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+background-color: var(--main-color);
+}
+.main-container {
+width: 90%;
+margin: auto;
+padding: 40px;
+background-color:var(--other-color);
+box-shadow: 1px 1px 10px 0px var(--icon-color);
+}
+
+/*  Heading  */
+
+.header {
+ width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  border-bottom: 1px solid #dddddd;
+}
+.sub {
+  display: flex;
+  align-items: center;
+}
+.bottom-line{
+height: 1px;
+width: 30px;
+background-color: var(--other-color);
+}
+.contact-number i {
+  color:var(--text-color);
+  font-size: 12px;
+  padding-right: 5px;
+}
+.phone {
+  color:var(--text-color);
+  font-size: 12px;
+}
+.contact ul {
+  display: flex;
+  list-style: none;
+  padding-right: 20px;
+  margin: 0;
+}
+.contact ul li {
+  padding-right: 15px;
+  color: var(--icon-color);
+}
+.login ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+.login ul li {
+  list-style: none;
+  padding-right: 15px;
+  font-size: 12px;
+  color:var(--text-color);
+  font-family: 'Poppins', sans-serif;
+}
+
+/*    Sub Heading    */
+
+.heading {
+  width: 80%;
+  margin: auto;
+  padding: 8px 0px;
+ background-color:var(--other-color);
+display: flex;
+justify-content: space-between;
+}
+.sub-heading {
+  display: flex;
+  
+}
+.search {
+  display: flex;
+  align-items: center;
+  padding-right: 5px;
+}
+.search img{
+  width: 20px;
+}
+.search-text {
+  font-size: 13px;
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+/* .logo-image {
+  height: ;
+} */
+.logo-image img {
+  width: 40px;
+}
+.logo-sub-text {
+  font-weight: 700;
+  letter-spacing:-0.5px;
+}
+
+.sub-text{
+  color:var(--light-brown-color) ;
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing:-0.5px;
+  font-family: 'Poppins', sans-serif;
+}
+.right-header {
+  display: flex;
+  align-items: center;
+}
+.heart-icon {
+  font-size: 20px;
+  color: var(--icon-color);
+  padding-right: 17px;
+  position: relative;
+}
+.heart-icon::before {
+  content: '3';
+  width: 15px;
+  font-size: 10px;
+  background-color: #c96;
+  color: var(--other-color);
+  text-align: center;
+  position: absolute;
+  border-radius: 50%;
+  top: 0;
+  right: 7px;
+}
+
+.heart ul{
+  display: flex;
+  list-style: none;
+  font-size: 11px;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.cart ul {
+  display: flex;
+  list-style: none;
+  font-size: 11px;
+  margin: 0;
+}
+.cart ul li {
+  padding-right: 17px;
+  font-weight: 600;
+}
+.cart-icon {
+  font-size: 18px;
+  color: var(--icon-color);
+  position: relative;
+}
+.cart-icon::before {
+  content: '2';
+  width: 15px;
+  font-size: 10px;
+  height: 15px;
+  background-color: #c96;
+  color: var(--other-color);
+  text-align: center;
+  position: absolute;
+  border-radius: 50%;
+  top: 0;
+  right: 7px;
+}
+
+/*  Main Section  */
+
+.garment {
+  width: 100%;
+  margin: auto;
+  background-color:var(--other-color);
+}
+.carousel {
+  height: 50vh;
+  position: relative;
+  z-index: 100;
+}
+.carousel-inner {
+  height: 100%;
+}
+.carousel-item {
+  height: 100%;
+}
+.carousel-inner img{
+  height: 100%; 
+}
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  margin-right: 5px!important;
+  margin-left: 5px!important;
+  border-radius: 50%;
+  border: 0!important;
+  background-color: transparent;
+  box-shadow: 0 0 0 0.1rem var(--other-color);
+}
+
+.carousel-indicators .active {
+opacity: 1;
+background-color: var(--orange-color);
+width: 20px;
+height: 10px;
+border-radius: 20px 20px;
+}
+.carousel-inner {
+  position: relative;
+}
+.slider {
+  margin-bottom: 7px;
+}
+.slide-btn {
+  height: 45px;
+  width: 45px;
+  border: 2px solid var(--btn-color);
+  border-radius: 50%;
+  }
+  .slider-btn-left {
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    transform: translate(140% , -300%);
+  }
+  .slider-btn-right {
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+    transform: translate(-140% , -300%);
+  }
+  .slider-icon {
+    /* position: absolute; */
+    width: 1.5em;
+    /* position: relative; */
+  }
+.nav-bar {
+  width: 82.3%;
+  background-color: var(--black-color);
+  color:var(--other-color);
+  padding: 12px 0px;
+  display: flex;
+  justify-content:space-around;
+ align-items: center;
+ position: absolute;
+ z-index: 200;
+}
+
+.nav-bar-left ul{
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0.7em;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+}
+.nav-bar-left ul li {
+padding-left: 20px;
+}
+.down-arrow{
+  margin-right: 7px;
+}
+
+.bulb ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  font-size: 0.8em;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+}
+.bulb-icon{
+  color: var(--orange-color);
+  padding-right: 15px;
+}
+.dress {
+margin-top: 10px;
+}
+.dress-collection {
+  display: flex;
+}
+.shop-women {
+  margin-right: 7px;
+  position: relative;
+  z-index: 100;
+}
+.shop-women-text {
+  position: absolute;
+  transform: translate(50%, 90%);
+  z-index: 200;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.bridal {
+  position: absolute;
+  transform: translate(81%, 87%);
+}
+.shop-women-text h1 {
+  text-transform: uppercase;
+  font-size: 35px;
+  font-weight: 700;
+  color: var(--other-color);
+  margin-bottom: 15px;
+  font-family: 'Poppins', sans-serif;
+}
+.shop-women-text h2 {
+  font-size: 15px;
+    color: var(--other-color);
+    text-transform: uppercase;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+.shop-women-text h3 {
+  font-size: 11px;
+  color: var(--other-color);
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+}
+
+.shop-women img {
+  height: 19.5em;
+  width: 35em;
+  position: relative;
+} 
+.bridal-women img{
+  height: 19.5em;
+  width: 34em;
+}
+.plan-cont {
+  height: 1px;
+  width: 100px;
+  background-color: var(--other-color);
+}
+
+.summer {
+  height: 40%;
+  width: 30%;
+}
+.summer img {
+  height: 13em;
+  width: 22.7em;
+}
+.summer-women-image {
+  height: 13em;
+  width: 23em;
+}
+.summer-text {
+position: absolute;
+transform: translate(126% , 30%);
+z-index: 200;
+display: flex;
+flex-direction: column;
+}
+.winter-clothes {
+  position: absolute;
+transform: translate(17% , 30%);
+z-index: 200;
+}
+.women-attire {
+  position: absolute;
+  transform: translate(212% , 30%);
+z-index: 200;
+}
+.summer-text h1 {
+  text-transform: uppercase;
+  color: var(--other-color);
+  font-size: 0.7em;
+}
+.summer-text h2 {
+  text-transform: uppercase;
+  color: var(--other-color);
+  font-size: 1.3em;
+  font-weight: 700;
+}
+.summer-text h3 {
+  text-transform: uppercase;
+  color: var(--other-color);
+  font-size: 1.3em;
+  font-weight: 700;
+}
+.summer-text h4 {
+  text-transform: uppercase;
+  color: var(--other-color);
+  font-size: 0.6em;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.climate-dress {
+  display: flex;
+}
+.summer-clothes {
+  margin-top: 10px;
+  padding: 0;
+}
+
+/*  Trending  */
+
+.trending {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--other-color);
+
+}
+.sub-heading  h2 {
+text-transform: uppercase;
+font-size: 1em;
+font-weight: 700;
+margin-top: 4.5em;
+letter-spacing: 0.1px;
+color: var(--black-color);
+font-family: 'Poppins', sans-serif;
+}
+.trend-nav ul {
+  display: flex;
+  font-size: 12px;
+  color: var(--black-color);
+list-style: none;
+letter-spacing: 1px;
+text-transform: uppercase;
+font-weight: 700;
+padding: 0;
+margin-top: 10px;
+font-family: 'Poppins', sans-serif;
+}
+.trend-nav ul li {
+  padding-left: 25px;
+}
+
+/*  Sale  */
+
+.card {
+  border: none;
+}
+.t-shirt {
+  position: relative;
+  z-index: 100;
+  flex-direction: row;
+}
+.card h2 {
+  padding: 2px 6px;
+  text-transform: uppercase;
+  color: var(--other-color);
+  background-color: var(--black-color);
+  position: absolute;
+  left: 10px;
+    top: 15px;
+  z-index: 200;
+  display: flex;
+    font-size: 0.7em;
+    font-family: 'Poppins', sans-serif;
+}
+.card-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-details h1{
+font-size: 0.8em;
+color: #c1c1c1;
+margin-top: 15px;
+}
+.card-details h4{
+  font-size: 0.8em;
+  color: var(--light-grey-color);
+  }
+.card-details h3{
+  font-size: 0.8em;
+    color: var(--light-grey-color);
+    }
+    .offer {
+      display: flex;
+    }
+    .offer h3 {
+      font-size: 0.8em;
+      color:var(--light-grey-color);
+    }
+    .offer h5 {
+      font-size: 0.8em;
+      color: var(--red-color);
+      margin-right: 5px;
+    }
+
+    /*  Third section*/
+
+    .deal {
+      height: 500px;
+      width: 100%;
+      margin: 110px 40px 0px auto;
+      background-color: rgb(208, 175, 175);
+      background: url(../images/bg-1.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      padding-top: 50px;
+    }
+    .deal-txt h1 {
+      font-size: 0.7em;
+      letter-spacing: 0.7px;
+      text-align: center;
+      color: var(--light-brown-color);
+      text-transform: uppercase;
+      font-family: 'Poppins', sans-serif;
+    }
+    .deal-txt h2 {
+      font-size: 1.1em;
+      font-weight: 600;
+margin: 15px 0px;
+      text-transform: uppercase;
+      font-family: 'Poppins', sans-serif;
+    }
+    .deal-offer {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+   .offer-time {
+  display: flex;
+  margin-left: 15px;
+    }
+    .time h1 {
+      font-size: 1.3em;
+      color: var(--light-brown-color);
+    }
+    .time h2 {
+      font-size: 0.7em;
+      color: var(--icon-color);
+    }
+    .offer-time .time {
+      margin-right:25px;
+    }
+    .colon {
+      margin-right: 25px;
+      font-size: 18px;
+    }
+    .card-details-garment {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .card-details-garment h4{
+      font-size: 0.7em;
+      color: var(--light-grey-color);
+      margin: 0;
+    }
+  
+.garment-card img{
+  display: flex;
+width: 7em;
+margin: auto;
+}
+.garment-offer {
+  display: flex;
+  margin-bottom: 10px;
+}
+.garment-offer h3 {
+  font-size: 0.7em;
+  color: var(--text-color);
+}
+.garment-offer h5 {
+  font-size: 0.7em;
+  color:var(--red-color);
+  margin-right: 5px;
+}
+.shop-now {
+  text-transform: uppercase;
+  font-size: 0.6em;
+  letter-spacing: 0.9px;
+  font-family: 'Poppins', sans-serif;
+}
+.plan-black-line {
+  height: 1.7px;
+  width: 90px;
+  background-color: var(--black-color);
+}
+
+/*  Navigation  */
+
+.navigation {
+  width: 100%;
+  margin: 0;
+  background-color: #282626;
+  padding: 20px 40px 40px 40px;
+}
+
+.payment {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.payment-icon {
+  color:#cc8c4c ;
+}
+.payment-text {
+  color: var(--other-color);
+  font-size: 0.7em;
+  margin: 0;
+  margin: 5px 0px;
+  font-family: 'Poppins', sans-serif;
+}
+.payment-sub-text {
+  font-size: 0.7em;
+  color:#686363;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+/*  pending  */
+
+.cards {
+  margin-bottom: 10em;
+}
+.angle {
+  display: flex;
+  align-items: center;
+  font-size: 1.3em;
+  color: var(--btn-color);
+}
+.left-angle {
+  margin-right: 18px;
+}
+.right-angle {
+  margin-left: 18px;
+}
+.arrivals-para {
+  margin: 35px 0px; 
+  font-size: 1.1em;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+.show-more-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.show-more-btn h2 {
+  text-transform: uppercase;
+  font-size: 0.7em;
+letter-spacing: 0.5px;
+margin-bottom: 15px;
+}
+.plan-black-line {
+  height: 2px;
+  width: 7em;
+  background-color: var(--black-color);
+}
+.devide-line {
+  margin: auto;
+  margin-top: 50px;
+  height: 1px;
+  width: 90%;
+  background-color: #f5eaea;
+}
+
+.sub-heading-brand {
+  font-size: 1.2em;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  letter-spacing: -1px;
+}
+
+.brands img {
+  width: 100%;
+}
+
+.brands ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  margin: 30px 0px 40px 0px;
+}
+.subscribe-section {
+  display: flex;
+}
+.subscribe-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 20em;
+  width: 45em;
+  margin-bottom: 5em;
+  background-color: #f3f3f3;
+}
+.subscribe-para {
+  position: absolute;
+  transform: translate(127% , 64%);
+  align-items: center;
+}
+.summer-subscribe img {
+  width: 35em;
+}
+.summer-subscribe-text {
+  position: absolute;
+transform: translate(105% , 30%);
+z-index: 200;
+display: flex;
+flex-direction: column;
+}
+
+.subscribe-image img {
+  width: 35em;
+  height: 18em;
+}
+
+.subscribe-text h2 {
+  text-transform: uppercase;
+  font-size: 1em;
+  letter-spacing: 0.5px;
+}
+.subscribe-text p {
+font-size: 0.9em;
+margin-bottom: 3px;
+color: var(--icon-color);
+}
+.discount-txt {
+  color: var(--light-brown-color);
+}
+.subscribe-text h4 {
+  font-size: 0.8em;
+  margin-bottom: 2em;  
+  margin-left: 4.5em;
+  color: var(--icon-color);
+}
+.textBox input {
+  width: 22em;
+    padding: 5px 20px;
+    margin-bottom: 35px
+}
+::placeholder{
+  color: var(--icon-color);
+font-size: 12px;
+}
+.instagram-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.instagram-page h2 {
+  font-size: 1.2em;
+  font-weight: 700;
+  margin-bottom: 0;
+text-transform: uppercase;
+}
+.instagram-page h3 {
+  font-size: 0.8em;
+  color: var(--text-color);
+}
+.instagram-images ul {
+  display: flex;
+  list-style: none;
+  margin-top: 10px;
+}
+.instagram-images img {
+  width: 92%;
+}
+.instagram {
+  height: 2px;
+  width: 9em;
+  background-color: var(--black-color);
+}
+.insta-btn {
+  color: var(--light-brown-color);
+  text-decoration: none;
+}
+.footer-container {
+  margin: 0px -40px;
+background-color: #222222;
+margin-top: 4em;
+padding: 3em 5em;
+
+}
+.anasha-fashion {
+  display: flex;
+  justify-content: left;
+}
+.anasha-fashion ul {
+  list-style: none;
+  padding: 0;
+}
+.anasha-fashion ul li {
+  font-size: 70%;
+  color: #898989;
+  
+}
+.anasha-image img {
+  width: 25%;
+  margin-bottom: 15px;
+}
+.fashion-text {
+  text-transform: uppercase;
+    font-weight: 700;
+    color: var(--other-color);
+    margin-bottom: 10px;
+}
+
+.fashion-sub {
+  margin-right: 70px;
+  width: 12em;
+}
+.fashion-sub li {
+  margin-bottom: 10px;
+}
+.fashion-details li {
+  margin-bottom: 5px;
+}
+.social-media-apps ul {
+display: flex;
+justify-content: space-around;
+}
+.visa-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.visa {
+  display: flex;
+  justify-content: space-between;
+}
+.visa .visa-cards {
+  margin: 10px;
+}
+
+.visa-cards img {
+  height: 13px;
+  width: 20px;
+}
+.bottom {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.bottom-logo {
+  display: flex;
+  justify-content: center;
+}
+.bottom-logo img {
+  width: 19%;
+  margin: 25px 0px;
+}
+.horizontal-line {
+  background-color: #282626;
+  margin-bottom: 50px;
+}
+.bottom-text {
+  font-size: 0.8em;
+  color: var(--icon-color);
+}
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+ 
